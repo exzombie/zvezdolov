@@ -661,7 +661,7 @@ Text Notes 4050 4100 0    39   ~ 0
 Quadrature rotary encoder with button.\nPin values are encoded as analog voltages.
 Text Notes 7550 5750 0    39   ~ 0
 LED driver for 7segment displays.
-Text Notes 8600 1900 0    39   ~ 0
+Text Notes 8450 1850 0    39   ~ 0
 Battery empty\nindicator.
 Text Notes 7050 3300 0    39   ~ 0
 Main LED driver, chained after the DM13A.
@@ -684,7 +684,7 @@ Text Notes 6150 1900 0    39   ~ 0
 LED current\nsetting.
 Text Notes 6500 5050 0    39   ~ 0
 LED current\nsetting.
-Text Notes 8900 2200 0    39   ~ 0
+Text Notes 8750 1950 0    39   ~ 0
 Operating mode indicator.
 Text Notes 9050 2450 0    39   ~ 0
 RGB LEDs.
@@ -828,12 +828,12 @@ $EndComp
 $Comp
 L R R1
 U 1 1 55846681
-P 3300 4600
-F 0 "R1" V 3225 4600 40  0000 C CNN
-F 1 "10k" V 3307 4601 40  0000 C CNN
-F 2 "Discret:R3" V 3230 4600 30  0001 C CNN
-F 3 "" H 3300 4600 30  0000 C CNN
-	1    3300 4600
+P 3350 4600
+F 0 "R1" V 3275 4600 40  0000 C CNN
+F 1 "10k" V 3357 4601 40  0000 C CNN
+F 2 "Discret:R3" V 3280 4600 30  0001 C CNN
+F 3 "" H 3350 4600 30  0000 C CNN
+	1    3350 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1058,18 +1058,16 @@ $EndComp
 $Comp
 L VCC #PWR037
 U 1 1 5585C00A
-P 3300 4450
-F 0 "#PWR037" H 3300 4550 30  0001 C CNN
-F 1 "VCC" H 3300 4550 30  0000 C CNN
-F 2 "" H 3300 4450 60  0000 C CNN
-F 3 "" H 3300 4450 60  0000 C CNN
-	1    3300 4450
+P 3350 4450
+F 0 "#PWR037" H 3350 4550 30  0001 C CNN
+F 1 "VCC" H 3350 4550 30  0000 C CNN
+F 2 "" H 3350 4450 60  0000 C CNN
+F 3 "" H 3350 4450 60  0000 C CNN
+	1    3350 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3650 4450 3550 4450
-Wire Wire Line
-	3300 4750 4000 4750
 Connection ~ 3550 4750
 Connection ~ 3750 4750
 $Comp
@@ -1134,7 +1132,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2200 4150 2200
 Wire Wire Line
-	3850 4450 3850 4750
+	3850 4750 3850 4450
 Wire Wire Line
 	4000 5000 4000 4850
 Wire Wire Line
@@ -1177,4 +1175,7 @@ F 3 "" H 4000 4450 60  0000 C CNN
 	1    4000 4450
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3300 4750 4000 4750
+Connection ~ 3350 4750
 $EndSCHEMATC
