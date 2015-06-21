@@ -1,0 +1,5 @@
+*~
+#*
+circuit/*.bak
+circuit/*-bak
+circuit/*.net
