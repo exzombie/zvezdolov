@@ -1,0 +1,12 @@
+(module winkey (layer F.Cu) (tedit 558E7131)
+  (fp_text reference REF** (at 0.254 -2.7044) (layer F.SilkS) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (fp_text value winkey (at 0.254 -4.2044) (layer F.Fab) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (fp_line (start -0.2032 -0.254) (end -0.5588 -0.4572) (layer B.Cu) (width 0.15))
+  (fp_arc (start 0 -0.127) (end 0.508 0.381) (angle 90) (layer B.Cu) (width 0.15))
+  (fp_circle (center 0 0) (end 0.889 0.508) (layer B.Cu) (width 0.15))
+  (fp_circle (center 0.381 -0.381) (end 0.508 -0.254) (layer B.Cu) (width 0.15))
+)

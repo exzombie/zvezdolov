@@ -35,10 +35,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Zvezdolov Poly-Color Brilliance"
+Date "June 2015"
+Rev "4"
+Comp "Astronomical Society Vega - Ljubljana"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -314,12 +314,6 @@ Text Label 9350 5250 2    39   ~ 0
 7S2P6
 Text Label 9350 5350 2    39   ~ 0
 7S2P7
-Text Notes 8650 7650 2    59   ~ 0
-June 2015
-Text Notes 10700 7650 2    59   ~ 0
-4
-Text Notes 9300 7500 2    79   ~ 0
-Zvezdolov Poly-Color Brilliance
 $Comp
 L VCC #PWR07
 U 1 1 54FEF11E
