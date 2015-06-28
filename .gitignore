@@ -1,5 +1,15 @@
+# Backup and autosave files.
 *~
-#*
+\#*
+.\#*
 circuit/*.bak
 circuit/*-bak
+circuit/_autosave-*
+
+# Temporary data for passing between KiCAD and FreeRoute components.
 circuit/*.net
+circuit/*.bin
+circuit/*.dsn
+circuit/*.rules
+circuit/*.ses
+circuit/fp-lib-table
