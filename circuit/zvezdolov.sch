@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Zvezdolov Poly-Color Brilliance"
-Date "June 2015"
-Rev "4"
+Date "August 2015"
+Rev "5"
 Comp "Astronomical Society Vega - Ljubljana"
 Comment1 ""
 Comment2 ""
@@ -866,12 +866,12 @@ $EndComp
 $Comp
 L 4050 U2
 U 5 1 5585141F
-P 3350 2200
-F 0 "U2" H 3545 2315 60  0000 C CNN
-F 1 "4050" H 3540 2075 60  0000 C CNN
-F 2 "Sockets_DIP:DIP-16__300" H 3350 2200 60  0001 C CNN
-F 3 "" H 3350 2200 60  0000 C CNN
-	5    3350 2200
+P 4300 2050
+F 0 "U2" H 4495 2165 60  0000 C CNN
+F 1 "4050" H 4490 1925 60  0000 C CNN
+F 2 "Sockets_DIP:DIP-16__300" H 4300 2050 60  0001 C CNN
+F 3 "" H 4300 2050 60  0000 C CNN
+	5    4300 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -885,7 +885,7 @@ F 3 "" H 3350 1600 60  0000 C CNN
 	1    3350 1600
 	-1   0    0    -1  
 $EndComp
-Text Label 2900 2200 2    39   ~ 0
+Text Label 3850 2050 2    39   ~ 0
 MISO
 Text Label 5750 1600 0    39   ~ 0
 SCK
@@ -941,8 +941,6 @@ NoConn ~ 4000 900
 NoConn ~ 5100 900 
 Wire Wire Line
 	4750 1500 4750 1250
-Wire Wire Line
-	4750 1700 4750 2150
 $Comp
 L R R3
 U 1 1 55857D0A
@@ -1008,8 +1006,8 @@ F 3 "" H 5150 1900 60  0000 C CNN
 	1    5150 1900
 	0    -1   -1   0   
 $EndComp
-Text Notes 3700 2600 0    39   ~ 0
-ICSP is buffered through a TI CD74HC4050\nwhich allows input voltages higher than Vcc.
+Text Notes 3700 2650 0    39   ~ 0
+ICSP is buffered through a TI CD74HC4050\nwhich allows input voltages higher than Vcc.\nThus, a 5V programmer should be compatible.\nIt is assumed that there is no significant voltage\ndrop to the programmer, otherwise MISO may\nnot work.
 $Comp
 L CONN_3X2 P2
 U 1 1 5585ABED
@@ -1075,56 +1073,12 @@ F 3 "" H 4450 1250 60  0000 C CNN
 	1    4450 1250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L R R13
-U 1 1 55866CAC
-P 5000 2150
-F 0 "R13" V 4900 2150 40  0000 C CNN
-F 1 "10k" V 5007 2151 40  0000 C CNN
-F 2 "Discret:R3" V 4930 2150 30  0001 C CNN
-F 3 "" H 5000 2150 30  0000 C CNN
-	1    5000 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR039
-U 1 1 55866D56
-P 5150 2150
-F 0 "#PWR039" H 5150 2150 30  0001 C CNN
-F 1 "GND" H 5150 2080 30  0001 C CNN
-F 2 "" H 5150 2150 60  0000 C CNN
-F 3 "" H 5150 2150 60  0000 C CNN
-	1    5150 2150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4300 1900 4750 1900
-Wire Wire Line
-	4750 2150 4850 2150
-Connection ~ 4750 1900
 Wire Wire Line
 	1050 2750 2050 2750
 Connection ~ 1250 2750
 Connection ~ 1650 2750
 Wire Wire Line
 	1050 2100 1050 2750
-$Comp
-L BS170 Q1
-U 1 1 5585A74B
-P 4100 2000
-F 0 "Q1" H 4000 2150 50  0000 L CNN
-F 1 "BS170" H 3900 1800 50  0000 L CNN
-F 2 "Housings_TO-92:TO-92_Molded_Wide_Reverse" H 3800 1750 50  0001 L CIN
-F 3 "" H 4100 2000 50  0000 L CNN
-	1    4100 2000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 1700 3900 1700
-Wire Wire Line
-	3900 1700 3900 1900
-Wire Wire Line
-	3800 2200 4150 2200
 Wire Wire Line
 	3850 4750 3850 4450
 Wire Wire Line
@@ -1172,4 +1126,7 @@ $EndComp
 Wire Wire Line
 	3300 4750 4000 4750
 Connection ~ 3350 4750
+Wire Wire Line
+	4750 1700 4750 2050
+NoConn ~ 3950 1700
 $EndSCHEMATC
